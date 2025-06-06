@@ -19,10 +19,7 @@ A full‐stack web application for managing projects, tasks, and teams. This rep
    - [Installation](#installation)  
    - [Running the Backend](#running-the-backend)  
    - [Running the Frontend](#running-the-frontend)  
-5. [Usage](#usage)  
-6. [Project Presentation](#project-presentation)  
-7. [Contributing](#contributing)  
-8. [License](#license)  
+5. [Usage](#usage)
 
 ---
 
@@ -41,7 +38,9 @@ The backend exposes RESTful APIs for user authentication, project/task CRUD oper
 ## Folder Structure
 
 Project_Management/
+
 ├── .vscode/
+
 │ └── settings.json # VS Code workspace settings (lint rules, editor prefs, etc.)
 │
 ├── backend/
@@ -88,20 +87,18 @@ Project_Management/
   - Express.js  
   - MongoDB (with Mongoose) *or* SQL (with Sequelize)  
   - JWT (JSON Web Tokens) for authentication  
-  - dotenv for environment variables  
-  - (Any other middlewares: CORS, helmet, morgan, etc.)
+  - dotenv for environment variables
 
 - **Frontend**  
   - React  
   - React Router  
   - Axios (or fetch)  
   - CSS / SASS / CSS Modules (depending on implementation)  
-  - Component library (optional, e.g., Material-UI, Chakra UI)  
+  - Component library
 
 - **Other**  
   - Git & GitHub for version control  
-  - VS Code workspace settings in `.vscode/`  
-  - Presentation created in PowerPoint (`.pptx`)
+  - VS Code workspace settings in `.vscode/`
 
 ---
 
@@ -127,26 +124,21 @@ Make sure you have the following installed:
    Setup the Backend
 2. **Setup the Backend**
 cd backend
-# if using npm
+if using npm
 npm install
-# or if using Yarn
-# yarn install
+or if using Yarn
+yarn install
 
 **Create a .env file (if not already present) with at least:**
-ini
-Copy
-Edit
 PORT=5000
 MONGO_URI=<your-mongo-connection-string>
 JWT_SECRET=<your-jwt-secret>
 
-**Other environment variables (e.g., SMTP settings) can be added as needed.**
-
 3. Setup the Frontend
 cd ../my-project
 npm install
-# or
-# yarn install
+or
+yarn install
 
 **Running the Backend**
 From within the backend/ folder:
@@ -154,13 +146,12 @@ From within the backend/ folder:
 # For development (with auto-restart via nodemon, if configured):
 npm run dev
 
-# Or for production:
+Or for production:
 npm start
 By default, the server will run at http://localhost:5000 (or the port set in .env). Ensure your database server is running and that MONGO_URI (or equivalent) is correct.
 
 **Running the Frontend**
 From within the my-project/ folder:
-
 npm start
 This will launch the React app in development mode on http://localhost:3000 by default. It should automatically open a browser window; if not, navigate to http://localhost:3000.
 
