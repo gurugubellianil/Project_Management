@@ -38,7 +38,7 @@ The backend exposes RESTful APIs for user authentication, project/task CRUD oper
 ## Folder Structure
 
 <pre><code>
-   Project_Management/
+Project_Management/
 ├── .vscode/
 │ └── settings.json # VS Code workspace settings (lint rules, editor prefs, etc.)
 │
@@ -66,7 +66,6 @@ The backend exposes RESTful APIs for user authentication, project/task CRUD oper
 │ └── README.md # Frontend‐specific instructions (if present)
 │
 └── Project PPT.pptx # High‐level design and feature overview presentation
-
 </code></pre>
 
 - **`.vscode/`**  
@@ -181,6 +180,7 @@ Assign roles (Admin, Project Manager, Developer).
 Manage permissions (who can edit, view, or delete tasks).
 
 **6. API Endpoints (examples)**
+<pre><code>
 POST   /api/auth/register       # Register new user
 POST   /api/auth/login          # Log in user
 GET    /api/projects            # List all projects
@@ -192,3 +192,4 @@ GET    /api/tasks               # List all tasks (with filters)
 POST   /api/tasks               # Create a task
 PUT    /api/tasks/:id           # Update a task
 DELETE /api/tasks/:id           # Delete a task
+</code></pre>
