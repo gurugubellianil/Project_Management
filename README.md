@@ -37,10 +37,9 @@ The backend exposes RESTful APIs for user authentication, project/task CRUD oper
 
 ## Folder Structure
 
+<pre><code>```text Project_Management/ ├── .vscode/ │ └── settings.json # VS Code workspace settings │ ├── backend/ │ ├── controllers/ # Express route handlers │ ├── models/ # Mongoose or Sequelize schemas/models │ ├── routes/ # Route definitions │ ├── middlewares/ # Auth and error handling middleware │ ├── config/ # DB connections, environment variables │ ├── package.json # Backend dependencies │ ├── server.js (or app.js) # Main Express server file │ └── README.md # Backend-specific docs │ ├── my-project/ │ ├── public/ # Static assets (HTML, favicon) │ ├── src/ │ │ ├── components/ # Reusable React components │ │ ├── pages/ # Page-level views (e.g., Home, Projects) │ │ ├── services/ # API services (axios, etc.) │ │ ├── utils/ # Utility functions │ │ ├── App.js # React root component │ │ ├── index.js # ReactDOM render and routing │ │ └── styles/ # CSS or SCSS files │ ├── package.json # Frontend dependencies │ └── README.md # Frontend-specific docs │ └── Project PPT.pptx # Presentation with project overview ``` </code></pre>
 Project_Management/
-
 ├── .vscode/
-
 │ └── settings.json # VS Code workspace settings (lint rules, editor prefs, etc.)
 │
 ├── backend/
